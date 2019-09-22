@@ -253,7 +253,7 @@ function showDetails(student) {
   modal.querySelector(".modal-lastname").textContent = student.lastname;
   modal.querySelector(".modal-house").textContent = student.house;
   modal.querySelector(".modal-gender").textContent = student.gender;
-  modal.querySelector(".modal-image").src = "images/" + student.lastname.toLowerCase() + "_" + student.firstname.charAt(0) + ".png";
+  modal.querySelector(".modal-image").src = "images/" + student.lastname.toLowerCase() + "_" + student.firstname.charAt(0).toLowerCase() + ".png";
   modal.classList.remove("hide");
   loadJSONfamilies(student);
   // try to do it more dynamic --- We need to add bh color for each modal depending on color of the house
